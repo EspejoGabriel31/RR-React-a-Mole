@@ -16,14 +16,13 @@ export default function MoleContainer(props){
             setScore={props.setScore} 
             toggle={setTheMole}
             handleClick={handleClick} 
-        /> :
+        /> 
+        :
         <EmptySlot toggle={setTheMole}/>
 
 
     return (
-        <div>
-            {/* <h2> Mole Container </h2>
-            <Mole /> */}
+        <div style={({'display': 'inline-block', 'width': '30vw'})}>
             {displayMole}
         </div>
     )
